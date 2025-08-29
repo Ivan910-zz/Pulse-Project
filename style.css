@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #eafaf1;
+}
+/*Mobile 320px*/
+@media (min-width: 20rem) {
+  nav {
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #d6dae5;
+  }
+  nav label {
+    margin-left: auto;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  .Links ul {
+    display: none;
+  }
+  label .fa-bars {
+    display: block;
+    font-size: 2rem;
+    color: #00ad6a;
+    cursor: pointer;
+  }
+  header {
+    padding: 1rem 1rem 0 1rem;
+  }
+  header h1 {
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+  }
+  header p {
+    line-height: 1.5;
+  }
+  main {
+    padding: 1rem;
+  }
+  .Left-SideBox h2 {
+    color: #00ad6a;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    padding: 0 0.75rem;
+  }
+  .Left-SideBox ul {
+    padding: 0 2.125rem;
+    margin-bottom: 1rem;
+  }
+  .Left-SideBox li p {
+    color: #525355;
+    font-size: 0.875rem;
+  }
+  .Pulse-PricingPlans {
+    margin-bottom: 3.5rem;
+  }
+  .PulseBasic {
+    margin-bottom: 1rem;
+  }
+  .PulseBasic p {
+    color: #525355;
+  }
+  .PulseBasic a {
+    color: #080c16;
+  }
+  .Small-BusinessPlan {
+    background-color: #fcfcfc;
+    border: 1px solid #00ad6a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 1.75rem;
+    cursor: pointer;
+  }
+  /* States */
+  .Small-BusinessPlan:hover p,
+  .Small-BusinessPlan:hover > p:nth-of-type(4),
+  .Small-BusinessPlan:hover .btnSignUpNow {
+    color: black;
+  }
+
+  /*Ovde dodajemo > što znači: "uzmi samo direktnog potomka <p> koji je prvi svog tipa u .Left-SideBox".*/
+  .Small-BusinessPlan > p:first-of-type {
+    color: #fcfcfc;
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    background-color: #00ad6a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .Small-BusinessPlan > p:nth-of-type(2) {
+    color: #00ad6a;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  .Small-BusinessPlan > p:nth-of-type(3) {
+    color: #525355;
+    margin-left: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .btnSmall {
+    display: none;
+  }
+  .Small-BusinessPlan > p:nth-of-type(4) {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #343435;
+  }
+  .Small-BusinessPlan ul {
+    padding: 0 1.125rem;
+  }
+  .Small-BusinessPlan ul li {
+    margin-bottom: 1rem;
+  }
+  .Small-BusinessPlan ul li p {
+    line-height: 1.2;
+    color: #525355;
+  }
+  .btnSignUpNow {
+    margin-bottom: 1rem;
+    background-color: #1fe374;
+    border: none;
+    width: 100%;
+    color: #343435;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  .buttonspace {
+    padding: 0 0.5rem;
+  }
+  .Unlock-Extra {
+    background-color: #fcfcfc;
+    border: 1px solid #d6dae5;
+    cursor: pointer;
+  }
+
+  /*Mora se vidjeti kasnije na vecim ekranima ali na drugom mjestu*/
+  .btnPremium {
+    display: none;
+  }
+  .Unlock-Extra > p:nth-of-type(1) {
+    background-color: #f2f3f3;
+    border-bottom: 1px solid #343435;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.75rem;
+    color: #525355;
+  }
+  .Unlock-Extra > p:nth-of-type(2) {
+    color: #00ad6a;
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  .Unlock-Extra > p:nth-of-type(3) {
+    color: #525355;
+    margin-left: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .Unlock-Extra > p:nth-of-type(4) {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #343435;
+  }
+  .Unlock-Extra ul {
+    padding: 0 1.125rem;
+  }
+  .Unlock-Extra ul li {
+    margin-bottom: 1rem;
+  }
+  .Unlock-Extra ul li p {
+    line-height: 1.2;
+    color: #525355;
+  }
+  .buttonspacePremiumSmallScreen {
+    padding: 0 0.5rem;
+  }
+  .btnPremiumSmallScreen {
+    margin-bottom: 1rem;
+    background-color: #1fe374;
+    border: none;
+    width: 100%;
+    color: #343435;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  .Unlock-Extra:hover > p:nth-of-type(4),
+  .Unlock-Extra:hover .btnPremiumSmallScreen,
+  .Unlock-Extra:hover ul li p {
+    color: black;
+  }
+  aside {
+    text-align: center;
+  }
+  aside h3 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  aside p {
+    color: #00ad6a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  article {
+    background-color: #fcfcfc;
+    padding: 2rem 1rem;
+  }
+  article h4 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  article .Question {
+    margin-bottom: 1.75rem;
+  }
+  .Question h5 {
+    font-size: 1.125rem;
+    line-height: 1.2;
+  }
+  .Question p {
+    color: #525355;
+  }
+  footer {
+    background-color: #080c16;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  footer .Logo-SignUp {
+    text-align: center;
+  }
+  .Logo-SignUp img {
+    margin-bottom: 1rem;
+  }
+  .btnSign {
+    margin-bottom: 2rem;
+    background-color: #1fe374;
+    border: none;
+    width: 100%;
+    color: #080c16;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    cursor: pointer;
+  }
+  .PCR {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .PCR p {
+    color: #fcfcfc;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .PCR a {
+    text-decoration: none;
+    color: #1fe374;
+    font-size: 0.875rem;
+    margin-bottom: 0.375rem;
+  }
+  .Product,
+  .Company,
+  .Resources {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min-content;
+  }
+  .PulseRights {
+    color: #83858a;
+    font-size: 0.75rem;
+  }
+  .PulseRights a {
+    color: #83858a;
+  }
+  .BottomPage {
+    border-top: 1px solid #d6dae5;
+  }
+}
+
+/*Screens 480px*/
+
+@media (min-width: 30rem) {
+  .Small-BusinessPlan > p:nth-of-type(3) {
+    font-size: 1.375rem;
+  }
+  .Unlock-Extra > p:nth-of-type(3) {
+    font-size: 1.375rem;
+  }
+  .PCR p {
+    font-size: 1rem;
+  }
+  .PCR a {
+    font-size: 1rem;
+  }
+}
+
+/*Screens 768px*/
+
+@media (min-width: 48rem) {
+  label {
+    display: none;
+  }
+  nav {
+    padding: 1.75rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: #eafaf1;
+  }
+  .Links ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .Links a {
+    text-decoration: none;
+    color: #00ad6a;
+    font-weight: 600;
+  }
+  /* States */
+
+  /*.Links a:visited {
+    color: #080c16;
+  } */
+  .Links a:hover {
+    color: #080c16;
+  }
+  .Links a:active {
+    color: #414452;
+  }
+  .Links ul li:nth-child(3) a {
+    color: #080c16;
+  }
+  .Links ul li:nth-child(3) a:active {
+    color: #414452;
+  }
+
+  .btn {
+    border: 2px solid #00ad6a;
+    background-color: #eafaf1;
+    padding: 0.325em 1em;
+    color: #00ad6a;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  /* btn States */
+  .btn:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px #00ad6a;
+  }
+  /*transfrom i box shadow moraju imati iste vrijednosti inace na hoveru
+  ce izgledati da se pomice cijeli button u stranu umjesto da dobije samo 
+  mali shadow*/
+
+  header h1 {
+    font-size: 3.25rem;
+  }
+  header h1 span {
+    display: block;
+  }
+  .faq-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .btnSign {
+    width: 20rem;
+  }
+  .Logo-SignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Screens 1024px*/
+
+@media (min-width: 64rem) {
+  header {
+    text-align: center;
+    width: 35rem;
+    margin: 0 auto 3.5rem;
+  }
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .Pulse-PricingPlans {
+    display: flex;
+    align-items: center;
+  }
+  .Left-SideBox {
+    max-width: 20rem;
+    padding-left: 2rem;
+  }
+  .Left-SideBox ul li {
+    margin-bottom: 0.5rem;
+  }
+  .Small-BusinessPlan {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
+
+  .Small-BusinessPlan > p:nth-of-type(2) {
+    font-size: 2.75rem;
+    text-align: center;
+    padding: 1.5rem 2rem 0 2rem;
+    line-height: 1.1;
+  }
+  .Small-BusinessPlan > p:nth-of-type(3) {
+    text-align: center;
+  }
+
+  .btnSmall {
+    margin: 0 auto 2rem;
+    display: block;
+    background-color: #1fe374;
+    border: none;
+    color: #343435;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.75rem 2.875rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .Small-BusinessPlan:hover .btnSmall {
+    color: black;
+    transform: scale(1.1);
+  }
+  .btnSignUpNow {
+    display: none;
+  }
+  .Small-BusinessPlan > p:nth-of-type(4) {
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+  .Small-BusinessPlan ul {
+    margin-left: 1rem;
+  }
+  .Small-BusinessPlan ul li p {
+    line-height: 1.4;
+  }
+
+  /*--------------------------------------------*/
+  .Unlock-Extra {
+    height: 38rem;
+  }
+  .Unlock-Extra {
+    background-color: #fcfcfc;
+    border: 1px solid #d6dae5;
+  }
+  .btnPremium {
+    display: block;
+    margin: 0 auto 2rem;
+    display: block;
+    background-color: #1fe374;
+    border: none;
+    color: #343435;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.75rem 2.875rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .Unlock-Extra:hover .btnPremium {
+    color: black;
+    transform: scale(1.1);
+  }
+  .btnPremiumSmallScreen {
+    display: none;
+  }
+
+  .Unlock-Extra > p:nth-of-type(1) {
+    border-bottom: 1px solid #d6dae5;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.3;
+  }
+
+  .Unlock-Extra > p:nth-of-type(2) {
+    font-size: 1.875rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .Unlock-Extra > p:nth-of-type(3) {
+    text-align: center;
+  }
+  .Unlock-Extra > p:nth-of-type(4) {
+    letter-spacing: 1.3px;
+    text-align: center;
+  }
+  .Unlock-Extra ul {
+    margin-left: 1rem;
+  }
+  .Unlock-Extra ul li p {
+    line-height: 1.4;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 34rem 1fr;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .Logo-SignUp {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .PCR {
+    margin-left: -3rem;
+    margin-right: 3rem;
+  }
+}
+/*No more responsivnes 1034px*/
+@media (min-width: 66rem) {
+  .Wrapper {
+    max-width: 67.875rem;
+    margin: 0 auto;
+  }
+  article {
+    max-width: 67.875rem;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 67.875rem;
+    margin: 0 auto;
+  }
+}
+.BottomPage {
+  background-color: #fcfcfc;
+}
+.BottomPage2 {
+  background-color: #080c16;
+}
+.btnSign:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px #83858a;
+}
+.PCR a:hover {
+  color: #fcfcfc;
+}
+.PulseRights a:hover {
+  color: #eafaf1;
+}
